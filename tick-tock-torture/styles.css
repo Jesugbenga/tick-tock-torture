@@ -1,0 +1,142 @@
+/* Universal Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Container for all elements */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.timer, .ambient-sounds, .alarm-controls {
+    margin-bottom: 30px;
+}
+
+/* Styling for the Alarm Clock Display */
+#question, #answer {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #000000;
+    color: #00ff00; 
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Input Box */
+input[type="number"] {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    background: #121212;
+    color: #ffffff;
+    outline: none;
+}
+
+/* Styling for Input Box */
+input[type="number"] {
+    font-size: 1.2rem;
+    padding: 12px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    background: #121212;
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+    background: #00ff00;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #00cc00;
+}
+
+/* Message Container */
+#message-container {
+    padding: 10px;
+    background-color: #222222;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+}
+
+/* Countdown display */
+.countdown-display {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00ff00;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #222222;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    min-width: 120px;
+}

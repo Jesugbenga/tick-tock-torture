@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Tick-Tock Torture",
+    "version": "1.0",
+    "description": "An alarm clock that makes you to complete simple math problems to turn it off and avoid procrastination.",
+    "author": "Jesugbenga Omoniwa",
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js", "soundPlayer.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icons/icon48.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        "sounds/for-the-rizzler-made-with-Voicemod.mp3"
+    ]
+}

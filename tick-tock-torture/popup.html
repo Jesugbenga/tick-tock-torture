@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick-Tock Torture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Study Timer</h2>
+        <div class="timer">
+            <input id="studyMinutes" type="number" placeholder="Minutes" min="1" />
+            <button id="startStudyTimer">Start Timer</button>
+            <button id="resetStudyTimer">Reset Timer</button>
+        </div>
+        <div id="countdownDisplay" class="countdown-display">00:00</div>
+
+        <h2>Chill Guy</h2>
+        <div class="ambient-sounds">
+            <button id="playLofi">Play Lo-Fi</button>
+            <button id="stopLofi">Stop Lo-Fi</button>
+        </div>
+
+        <h2>Productivity Alarm</h2>
+        <div class="alarm-controls">
+            <button id="startAlarm">Start Alarm</button>
+            <button id="stopAlarm">Stop Alarm</button>
+        </div>
+
+        <div id="message-container"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* Universal Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Stacking elements vertically */
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Light shadow for text */
+}
+
+/* Question Styling */
+#question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #000000;
+    color: #00ff00; /* Green text */
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 3px solid #00ff00;
+    max-width: 80%;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Input Field Styling */
+input[type="number"] {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    background: #121212;
+    color: #ffffff;
+    outline: none;
+    margin: 10px auto;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+    border-color: #00ff00;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #00ff00;
+    color: #ffffff;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #00cc00;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Additional Spacing */
+#submit {
+    width: 50%;
+    margin-top: 20px; /* Add more spacing above the button */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 600px) {
+    #question {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+    
+    input[type="number"] {
+        width: 80%;
+    }
+    
+    button {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
