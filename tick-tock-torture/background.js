@@ -21,9 +21,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                     width: 600,
                     height: 350
                 });
-
-                // Start playing the weird sound
-                chrome.runtime.sendMessage({ action: 'playSound' });
             }
         });
     }

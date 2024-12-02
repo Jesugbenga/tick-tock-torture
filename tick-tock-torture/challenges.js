@@ -15,11 +15,8 @@ const retrySuccessSound = new Audio(chrome.runtime.getURL('sounds/kendrick-musta
 
 // Preload image URLs for corner display
 const cornerImages = [
-  chrome.runtime.getURL('icons/angry.png'),
   chrome.runtime.getURL('icons/you-didnt-have-to-cut.jpg'),
-  chrome.runtime.getURL('icons/icon48.png'),
-  chrome.runtime.getURL('icons/caseoh.jpg'),
-  chrome.runtime.getURL('icons/skibidi toilet.jpg')
+  chrome.runtime.getURL('icons/icon48.png')
 ];
 
 // Function to display images at the four corners of the screen
@@ -28,8 +25,8 @@ function displayCornerImages() {
     const img = document.createElement('img');
     img.src = imgSrc;
     img.style.position = 'fixed';
-    img.style.width = '100px';
-    img.style.height = '100px';
+    img.style.width = '300px';
+    img.style.height = '300px';
 
     switch (index) {
       case 0: // Top-left corner
@@ -56,6 +53,15 @@ function displayCornerImages() {
   });
 }
 
+// Get the audio element
+const popupSound = document.getElementById('popupSound');
+
+// Add an event listener to the window's load event
+window.addEventListener('load', () => {
+    // Play the sound when the popup loads
+    popupSound.play();
+});
+
 // Function to play a sound for 7 seconds
 function playSoundForDuration(audio, duration = 7000) {
     audio.play();
@@ -76,10 +82,10 @@ document.getElementById('submit').addEventListener('click', () => {
             playSoundForDuration(retrySuccessSound); // Play success-after-retries sound
         }
         alert('Correct! You can now continue your work.');
-        displayCornerImages(); // Show images
         chrome.runtime.sendMessage({ action: 'challengeCompleted' });
         window.close();
     } else {
+        displayCornerImages(); // Show images
         attempts++;
         if (attempts < 5) {
             playSoundForDuration(failureSounds[attempts - 1]); // Play the appropriate failure sound
