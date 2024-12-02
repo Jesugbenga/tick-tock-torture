@@ -10,7 +10,7 @@
         "storage"
     ],
     "background": {
-        "scripts": ["background.js", "soundPlayer.js"],
+        "scripts": ["background.js"],
         "persistent": false
     },
     "browser_action": {
@@ -22,6 +22,11 @@
         "128": "icons/icon128.png"
     },
     "web_accessible_resources": [
-        "sounds/for-the-rizzler-made-with-Voicemod.mp3"
+        "sounds/for-the-rizzler-made-with-Voicemod.mp3",
+        "icons/icon128.png",
+        "icons/caseoh.jpg",
+        "icons/kai cenat.jpeg",
+        "icons/you-didnt-have-to-cut.jpg",
+        "icons/cat sigma.jpg"
     ]
 }
