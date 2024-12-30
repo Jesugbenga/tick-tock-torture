@@ -1,6 +1,6 @@
-# Tick-Tock Torture: A Study Timer & Productivity Alarm Chrome Extension
+# Tick-Tock: A Study Timer & Productivity Alarm Chrome Extension
 
-Tick-Tock Torture is a Chrome extension designed to keep you focused, productive, and entertained. It combines a **study timer**, **ambient Lo-Fi music player**, and a **challenge-based productivity alarm** to make your study sessions more engaging and efficient.
+Tick-Tock  is a Chrome extension designed to keep you focused, productive, and entertained. It combines a **study timer**, **ambient Lo-Fi music player**, and a **challenge-based productivity alarm** to make your study sessions more engaging and efficient.
 
 ## Features
 
@@ -26,7 +26,7 @@ Follow these steps to download and install the extension:
    Clone or download the project from GitHub:
 
    ```bash
-   git clone https://github.com/your-username/tick-tock-torture.git
+   git clone https://github.com/your-username/tick-tock.git
    ```
 
    Alternatively, you can download the ZIP file directly from GitHub and extract it.
@@ -47,7 +47,7 @@ Follow these steps to download and install the extension:
 ## Usage Instructions
 
 1. **Open the Extension**:  
-   Click on the Tick-Tock Torture icon in your Chrome toolbar.
+   Click on the Tick-Tock icon in your Chrome toolbar.
 
 2. **Study Timer**:  
    - Input the desired study duration in minutes.
@@ -71,7 +71,7 @@ Follow these steps to download and install the extension:
 ## Project Structure
 
 ```
-tick-tock-torture/
+tick-tock/
 ├── icons/              # Icons for the extension
 ├── sounds/             # Audio files for alarms and Lo-Fi music
 ├── styles.css          # Styling for the extension
